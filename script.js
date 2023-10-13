@@ -46,7 +46,6 @@ fetch_img.then((response) => {
         arr = []
         arr.push(glry_img)
         let gallery_section = document.querySelector('.gallery_section')
-
         for (let i = 0; i < arr.length; i++) {
             const imgg = document.createElement('img');
             imgg.src = arr[i];
