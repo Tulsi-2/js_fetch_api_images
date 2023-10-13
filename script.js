@@ -41,14 +41,10 @@ fetch_img.then((response) => {
     console.log(a)
 
     a.map((item) => {
-
-        let glry_img = item.url
-        arr = []
-        arr.push(glry_img)
         let gallery_section = document.querySelector('.gallery_section')
-        for (let i = 0; i < arr.length; i++) {
+       
             const imgg = document.createElement('img');
-            imgg.src = arr[i];
+            imgg.src= item.url
             gallery_section.appendChild(imgg);
             imgg.style.height = "20rem"
             imgg.style.width = "20rem"
@@ -59,7 +55,7 @@ fetch_img.then((response) => {
             imgg.style.objectFit = "cover"
             imgg.style.backgroundColor= "rgb(163, 199, 163)"
             imgg.style.border = "4px solid black"
-        }
+        
     })
 
 })
