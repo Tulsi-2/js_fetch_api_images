@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+}
+
+.list {
+    margin: auto;
+    margin-left: 0;
+}
+
+.list ul li a {
+    padding-right: 1.5rem;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.list ul li a:hover {
+    color: red;
+}
+
+nav {
+    background-color: #d1ea90;
+    height: 8rem;
+    position: sticky;
+    top: 0;
+
+}
+
+@keyframes example {
+    0% {
+        background-color: rgb(107, 195, 221);
+    }
+
+    20% {
+        background-color: lightslategray;
+    }
+
+    40% {
+        background-color: rgb(120, 120, 228);
+    }
+
+    80% {
+        background-color: rgb(223, 223, 132);
+    }
+
+    100% {
+        background-color: lightgreen;
+    }
+}
+
+.wlcm {
+    border: 0.3rem solid black;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    animation-name: example;
+    animation-duration: 10s;
+    background-color: rgb(102, 170, 116);
+    font-weight: bold;
+    font-size: 3rem;
+}
+.gallery_section{
+    margin: 2rem;
+}
+.display {
+    text-align: center;
+   
+}
+
+.imgDisplay {
+    padding: 1rem;
+}
+
+
+@media (max-width: 998px) {
+
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 550px) {
+
+    html {
+        font-size: 45%;
+    }
+}
+
+@media (max-width: 655px) {
+    div .imgDisplay {
+        height: 10rem;
+        width: 20rem;
+    }
+}
+
+@media(min-width: 650px)  {
+    .display {
+        height: 40vh;
+    }
+}
