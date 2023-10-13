@@ -15,17 +15,14 @@ function get_img() {
 
                 let final = data.photos[x].url
 
-                display_img.style.height = "20rem"
-                display_img.style.width = "40rem"
-                display_img.style.margin = "auto"
-
                 display_img.setAttribute('src', `${final}`)
                 img.appendChild(display_img)
+                display_img.className ="headerImg"
 
             })
             resolve()
 
-        }, 2000)
+        }, 1500)
 
     })
 
