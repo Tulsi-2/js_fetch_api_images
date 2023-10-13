@@ -2,8 +2,6 @@
 let img = document.querySelector('.imgDisplay')
 let display_img = document.createElement('img')
 
-
-
 get_img()
 
 function get_img() {
@@ -44,17 +42,9 @@ fetch_img.then((response) => {
         let gallery_section = document.querySelector('.gallery_section')
        
             const imgg = document.createElement('img');
+            imgg.className = "allImg"
             imgg.src= item.url
             gallery_section.appendChild(imgg);
-            imgg.style.height = "20rem"
-            imgg.style.width = "20rem"
-            imgg.style.display = "inline-block" 
-            imgg.style.padding = "4rem"
-            imgg.style.margin = "1rem"
-            imgg.style.marginLeft = "6rem"
-            imgg.style.objectFit = "cover"
-            imgg.style.backgroundColor= "rgb(163, 199, 163)"
-            imgg.style.border = "4px solid black"
         
     })
 
