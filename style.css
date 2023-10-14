@@ -121,8 +121,16 @@ background-color: rgb(183, 233, 183);
     }
 }
 
-@media(min-width: 650px) {
-    .display {
-        height: 40vh;
+@media(max-width: 570px) {
+    .allImg{
+        height: 10rem;
+    width: 10rem;
+    }
+    .img{
+        height: 2rem;
+        width: 2rem;
+    }
+    .wlcm{
+        width: 85%;
     }
 }
